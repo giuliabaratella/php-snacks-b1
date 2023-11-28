@@ -48,7 +48,7 @@ $matches = [
                 </div>
             <?php } ?>
         </div>
-        <div>
+        <div class="my-5">
             <!-- form snack 2  -->
             <h2>Accedi</h2>
             <h5>Snack 2</h5>
@@ -69,6 +69,10 @@ $matches = [
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
+        </div>
+        <div class="my-5">
+            <h3><a href="bonus.php">Vai al bonus</a></h3>
+
         </div>
     </div>
 
