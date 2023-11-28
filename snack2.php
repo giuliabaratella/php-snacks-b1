@@ -4,6 +4,12 @@ $name = $_GET["name"];
 $age = $_GET["age"];
 $email = $_GET["email"];
 // echo $name . $age . $email;
+// var_dump(strlen($name) > 3);
+// var_dump(str_contains($email, "@"));
+// var_dump(str_contains($email, "."));
+// var_dump(is_numeric($age));
+
+
 
 ?>
 
@@ -21,7 +27,18 @@ $email = $_GET["email"];
 </head>
 
 <body>
+    <div class="container">
+        <h3 class="my-5">
+            <?php
+            if ((strlen($name) > 3) && (str_contains($email, "@")) && (str_contains($email, ".")) && (is_numeric($age))) {
+                echo "Accesso riuscito";
+            } else {
+                echo "Accesso negato";
+            }
+            ?>
+        </h3>
 
+    </div>
 </body>
 
 </html>
