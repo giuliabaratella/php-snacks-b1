@@ -17,20 +17,25 @@ $newParagraph = explode(".", $paragraph);
     <title>Bonus</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-    <div class="container py-5">
-        <h2>Il tuo testo:</h2>
-        <p>
-            <?php echo $paragraph ?>
-        </p>
-        <h2>Il tuo testo diviso in paragrafi:</h2>
-        <?php foreach ($newParagraph as $phrase) { ?>
+    <div class="container">
+        <div id="text" class="p-2  my-5">
+            <h2>Il tuo testo:</h2>
             <p>
-                <?php echo "$phrase." ?>
+                <?php echo $paragraph ?>
             </p>
-        <?php } ?>
+            <h2>Il tuo testo diviso in paragrafi:</h2>
+            <?php foreach ($newParagraph as $phrase) { ?>
+                <p>
+                    <?php echo "$phrase." ?>
+                </p>
+            <?php } ?>
+        </div>
+        <button class="btn btn-home"><a href="index.php">Torna alla home</a></button>
     </div>
 
 </body>

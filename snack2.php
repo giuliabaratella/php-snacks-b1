@@ -24,11 +24,13 @@ $email = $_GET["email"];
     <title>Snack2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
     <div class="container">
-        <h3 class="my-5">
+        <h3 class="my-5 p-2" id="access">
             <?php
             if ((strlen($name) > 3) && (str_contains($email, "@")) && (str_contains($email, ".")) && (is_numeric($age))) {
                 echo "Accesso riuscito";
@@ -37,6 +39,8 @@ $email = $_GET["email"];
             }
             ?>
         </h3>
+
+        <button class="btn btn-home"><a href="index.php">Torna alla home</a></button>
 
     </div>
 </body>
